@@ -1,0 +1,64 @@
+{
+    "admin": {
+        "first_name": "Admin",
+        "last_name": "User",
+        "phone": "0000000000",
+        "email": "admin",
+        "password": "admin",
+        "expenses": []
+    },
+    "smat@psu.edu": {
+        "first_name": "steve",
+        "last_name": "mathew",
+        "phone": "1234567890",
+        "email": "smat@psu.edu",
+        "password": "smat",
+        "expenses": [
+            {
+                "date": "2023-12-01",
+                "description": "gas",
+                "amount": 70.0,
+                "category": "Fuel"
+            },
+            {
+                "date": "2023-11-23",
+                "description": "cafe",
+                "amount": 120.0,
+                "category": "Food"
+            },
+            {
+                "date": "2023-11-14",
+                "description": "bill",
+                "amount": 1250.0,
+                "category": "Bills"
+            }
+        ]
+    },
+    "jpr6047@psu.edu": {
+        "first_name": "jahidul",
+        "last_name": "rob",
+        "phone": "2679163025",
+        "email": "jpr6047@psu.edu",
+        "password": "robin",
+        "expenses": [
+            {
+                "date": "2023-11-19",
+                "description": "diner",
+                "amount": 200.0,
+                "category": "Food"
+            },
+            {
+                "date": "2023-10-29",
+                "description": "travel",
+                "amount": 400.0,
+                "category": "Travel"
+            },
+            {
+                "date": "2023-11-26",
+                "description": "hotel",
+                "amount": 450.0,
+                "category": "Travel"
+            }
+        ]
+    }
+}
