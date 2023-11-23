@@ -9,6 +9,12 @@ The Personal Finance Assistant is a Python application designed to help users ma
 - Admin functionalities to manage user accounts
 - Data Persistence across sessions
 
+## NLP in the Project
+Natural Language Processing (NLP) plays a crucial role in the Personal Finance Assistant. It is used to enhance the expense categorization process. Here's how NLP is integrated:
+- **Text Preprocessing:** The application uses NLP techniques like tokenization and stopword removal to preprocess the descriptions of expenses. This involves breaking down the text into individual words and removing common words that don't contribute significant meaning.
+- **Expense Categorization:** After preprocessing, the application uses keyword-based logic to categorize each expense. For example, if a transaction description contains words like "restaurant" or "grocery," the NLP system categorizes it as "Food." This approach simplifies the user's task of categorizing each transaction manually.
+
+
 ## Getting Started
 
 ### Prerequisites
