@@ -7,57 +7,34 @@
         "password": "admin",
         "expenses": []
     },
-    "smat@psu.edu": {
+    "tester@psu.edu": {
         "first_name": "steve",
-        "last_name": "mathew",
+        "last_name": "mat",
         "phone": "1234567890",
-        "email": "smat@psu.edu",
-        "password": "smat",
-        "expenses": [
-            {
-                "date": "2023-12-01",
-                "description": "gas",
-                "amount": 70.0,
-                "category": "Fuel"
-            },
-            {
-                "date": "2023-11-23",
-                "description": "cafe",
-                "amount": 120.0,
-                "category": "Food"
-            },
-            {
-                "date": "2023-11-14",
-                "description": "bill",
-                "amount": 1250.0,
-                "category": "Bills"
-            }
-        ]
+        "email": "tester@psu.edu",
+        "password": "tester",
+        "expenses": []
     },
-    "jpr6047@psu.edu": {
-        "first_name": "jahidul",
-        "last_name": "rob",
-        "phone": "2679163025",
-        "email": "jpr6047@psu.edu",
+    "rob@psu.edu": {
+        "first_name": "robin",
+        "last_name": "kakashi",
+        "phone": "0987654321",
+        "email": "rob@psu.edu",
         "password": "robin",
+        "expenses": []
+    },
+    "bat@psu.edu": {
+        "first_name": "Batman",
+        "last_name": "Robin",
+        "phone": "1234567890",
+        "email": "bat@psu.edu",
+        "password": "batman",
         "expenses": [
             {
-                "date": "2023-11-19",
-                "description": "diner",
-                "amount": 200.0,
+                "date": "2023-11-27",
+                "description": "cafe",
+                "amount": 20.0,
                 "category": "Food"
-            },
-            {
-                "date": "2023-10-29",
-                "description": "travel",
-                "amount": 400.0,
-                "category": "Travel"
-            },
-            {
-                "date": "2023-11-26",
-                "description": "hotel",
-                "amount": 450.0,
-                "category": "Travel"
             }
         ]
     }
