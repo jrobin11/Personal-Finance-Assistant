@@ -12,8 +12,19 @@ The Personal Finance Assistant is a Python application designed to help users ma
 ## NLP in the Project
 Natural Language Processing (NLP) plays a crucial role in the Personal Finance Assistant. It is used to enhance the expense categorization process. Here's how NLP is integrated:
 - **Text Preprocessing:** The application uses NLP techniques like tokenization and stopword removal to preprocess the descriptions of expenses. This involves breaking down the text into individual words and removing common words that don't contribute significant meaning.
-- **Expense Categorization:** After preprocessing, the application uses keyword-based logic to categorize each expense. For example, if a transaction description contains words like "restaurant" or "grocery," the NLP system categorizes it as "Food." This approach simplifies the user's task of categorizing each transaction manually.
+   - Text Preprocessing:
+      - Purpose: The goal here is to prepare the raw text from your expense descriptions for further analysis. Text preprocessing is a common first step in many NLP applications.
+      - Tokenization: This process involves splitting the text into individual words or tokens. For example, the phrase "Grocery shopping at Walmart" would be split into ['Grocery', 'shopping', 'at', 'Walmart'].
+   - Stopword Removal:
+      - Stopwords are common words that usually don’t carry significant meaning and are often removed from the text. Examples include words like "at", "the", "and", etc.
+      - Removing these words helps to focus on the more meaningful words in your text. So, from our earlier example, after removing stopwords, you might be left with ['Grocery', 'shopping', 'Walmart'].
 
+- **Expense Categorization:** After preprocessing, the application uses keyword-based logic to categorize each expense. For example, if a transaction description contains words like "restaurant" or "grocery," the NLP system categorizes it as "Food." This approach simplifies the user's task of categorizing each transaction manually.
+   - Expense Categorization:
+      - Purpose: After preprocessing, your application categorizes each expense based on the keywords found in the processed text.
+      - Keyword-Based Logic: Here, you have predefined categories (like Food, Fuel, Bills, Travel) and associated keywords for each category. When the preprocessed text of an expense description matches certain keywords, the expense is categorized accordingly.
+      - Example: If a user inputs an expense description like "Dinner at an Italian restaurant", after preprocessing, the remaining significant words might be ['Dinner', 'Italian', 'restaurant']. If your categorization logic associates the keyword "restaurant" with the "Food" category, this expense will be categorized as "Food".
+      - Benefit: This automated categorization simplifies the process for users, as they don’t have to manually categorize each transaction. It makes tracking expenses more efficient and user-friendly.
 
 ## Getting Started
 
