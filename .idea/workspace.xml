@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fc91189-9485-442c-8bce-8ffffe3bbd4f" name="Changes" comment="major changes and bug fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.json" beforeDir="false" />
-    </list>
+    <list default="true" id="0fc91189-9485-442c-8bce-8ffffe3bbd4f" name="Changes" comment="major changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +33,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test.py">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FinanceApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,10 +120,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests in test.py" />
         <item itemvalue="Python tests.Python tests for test.TestFinanceApp.test_view_user_info" />
         <item itemvalue="Python tests.Python tests for test.TestFinanceApp.test_admin_modify_user_info" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -148,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701123305549</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="major changes">
+      <created>1701126358178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701126358178</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="major changes and bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="major changes and bug fixes" />
+    <MESSAGE value="major changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="major changes" />
   </component>
 </project>

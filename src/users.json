@@ -1,0 +1,17 @@
+{
+    "admin": {
+        "password": "admin",
+        "expenses": []
+    },
+    "test_user": {
+        "password": "test123",
+        "expenses": [
+            {
+                "date": "2021-01-02",
+                "description": "Coffee",
+                "amount": 5.0,
+                "category": "Other"
+            }
+        ]
+    }
+}
