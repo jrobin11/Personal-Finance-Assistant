@@ -13,5 +13,65 @@
                 "category": "Other"
             }
         ]
+    },
+    "jpr6047@psu.edu": {
+        "first_name": "Jahidul",
+        "last_name": "Robin",
+        "phone": null,
+        "email": "jpr6047@psu.edu",
+        "password": "robin",
+        "expenses": [
+            {
+                "date": "2023-10-24",
+                "description": "getting water from wawa",
+                "amount": 5.0,
+                "category": "Bills"
+            },
+            {
+                "date": "2023-11-27",
+                "description": "got some water from walmart",
+                "amount": 25.0,
+                "category": "Bills"
+            }
+        ]
+    },
+    "bat@man.edu": {
+        "first_name": "bat",
+        "last_name": "man",
+        "phone": "1234567890",
+        "email": "bat@man.edu",
+        "password": "batman",
+        "expenses": [
+            {
+                "date": "2023-11-23",
+                "description": "got some water from wawa",
+                "amount": 24.0,
+                "category": "Food"
+            },
+            {
+                "date": "2023-11-20",
+                "description": "paid the water bill",
+                "amount": 100.0,
+                "category": "Food"
+            },
+            {
+                "date": "2023-10-11",
+                "description": "paid the water-bill",
+                "amount": 120.0,
+                "category": "Food"
+            },
+            {
+                "date": "2023-09-12",
+                "description": "paid the water-bill",
+                "amount": 130.0,
+                "category": "Food"
+            },
+            {
+                "date": "2023-11-23",
+                "description": "paid the water-bill in full",
+                "amount": 1222.0,
+                "category": "Bills"
+            }
+        ]
     }
 }

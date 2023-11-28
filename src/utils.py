@@ -3,17 +3,25 @@ import os
 from colorama import init, Fore, Style
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+import re
+
+from constants import FOOD_KEYWORDS, FUEL_KEYWORDS, BILLS_KEYWORDS, TRAVEL_KEYWORDS, SAVINGS_INVESTMENT_KEYWORDS, \
+    HOME_KEYWORDS, ENTERTAINMENT_KEYWORDS, SHOPPING_KEYWORDS, HEALTH_KEYWORDS, EDUCATION_KEYWORDS, \
+    TRANSPORTATION_KEYWORDS, CHILD_CARE_KEYWORDS, PET_CARE_KEYWORDS, PERSONAL_CARE_KEYWORDS
+
+ENTERTAINMENT_KEYWORDS, SHOPPING_KEYWORDS, HEALTH_KEYWORDS, EDUCATION_KEYWORDS, HOME_KEYWORDS,
+TRANSPORTATION_KEYWORDS, CHILD_CARE_KEYWORDS, PET_CARE_KEYWORDS,PERSONAL_CARE_KEYWORDS, SAVINGS_INVESTMENT_KEYWORDS
 
 # Initialize Colorama for colored output
 init(autoreset=True)
 
 USER_DATA_FILE = "users.json"
-
-# Constants for categorization
-FOOD_KEYWORDS = ["restaurant", "cafe", "supermarket", "grocery", "pizza", "diner"]
-FUEL_KEYWORDS = ["gas", "fuel", "petrol", "service station"]
-BILLS_KEYWORDS = ["bill", "utility", "electricity", "water", "internet", "phone"]
-TRAVEL_KEYWORDS = ["airline", "travel", "uber", "taxi", "bus", "train", "hotel"]
+#
+# # Constants for categorization
+# FOOD_KEYWORDS = ["restaurant", "cafe", "supermarket", "grocery", "pizza", "diner"]
+# FUEL_KEYWORDS = ["gas", "fuel", "petrol", "service station"]
+# BILLS_KEYWORDS = ["bill", "utility", "electricity", "internet", "phone"]
+# TRAVEL_KEYWORDS = ["airline", "travel", "uber", "taxi", "bus", "train", "hotel"]
 
 def print_heading(text):
     print(Fore.CYAN + Style.BRIGHT + text + Style.RESET_ALL)
@@ -48,14 +56,25 @@ def save_users_data(users):
         json.dump(users, file, indent=4)
 
 def nlp_preprocess(text):
+    # Use regular expressions to find compound keywords first
+    compounds = re.findall(r'\b(?:water|electricity|internet|phone)-bill\b', text, re.IGNORECASE)
+    # Tokenize and process as before
     tokens = word_tokenize(text)
-    tokens = [word.lower() for word in tokens]
-    tokens = [word for word in tokens if word not in stopwords.words('english')]
+    tokens = [word.lower() for word in tokens if word not in stopwords.words('english')]
+    # Include compounds back into the tokens list
+    tokens.extend(compounds)
     return " ".join(tokens)
 
 def categorize_transaction(description):
     processed_text = nlp_preprocess(description)
 
+    # Check for specific compound bill keywords
+    bill_compounds = {"water-bill", "electricity-bill", "internet-bill", "phone-bill"}
+    for compound in bill_compounds:
+        if compound in processed_text:
+            return "Bills"
+
+    # Your existing checks
     if any(keyword in processed_text for keyword in FOOD_KEYWORDS):
         return "Food"
     elif any(keyword in processed_text for keyword in FUEL_KEYWORDS):
@@ -66,7 +85,6 @@ def categorize_transaction(description):
         return "Travel"
     else:
         return "Other"
-
 def add_expense(username, users):
     print("\nExample Transaction Description: 'Grocery shopping at Walmart'")
     date = input("Enter the date (YYYY-MM-DD): ")

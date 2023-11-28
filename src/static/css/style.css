@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    margin: 2em;
+}
+
+form {
+    margin-top: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Add more styling as per your design */
