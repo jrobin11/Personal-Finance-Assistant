@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fc91189-9485-442c-8bce-8ffffe3bbd4f" name="Changes" comment="major changes">
-      <change afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FinanceApp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0fc91189-9485-442c-8bce-8ffffe3bbd4f" name="Changes" comment="minor changes to features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701126433642</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="minor changes to features">
+      <created>1701138077722</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701138077722</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +185,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="major changes and bug fixes" />
     <MESSAGE value="major changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="major changes" />
+    <MESSAGE value="minor changes to features" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes to features" />
   </component>
 </project>
