@@ -73,5 +73,21 @@
                 "category": "Bills"
             }
         ]
+    },
+    "bat@gmail.com": {
+        "first_name": "Batman",
+        "last_name": "Robin",
+        "phone": null,
+        "email": "bat@gmail.com",
+        "password": "batman",
+        "expenses": []
+    },
+    "bat1@gmail.com": {
+        "first_name": "Batman",
+        "last_name": "Robin",
+        "phone": null,
+        "email": "bat1@gmail.com",
+        "password": "robin",
+        "expenses": []
     }
 }

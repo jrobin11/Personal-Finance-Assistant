@@ -1,11 +1,14 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, session
 import json
+import os
 
 app = Flask(__name__)
+app.secret_key = 'your_very_secret_key'  # Replace with a real secret key
 
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -22,18 +25,25 @@ def register():
 def login():
     data = request.form.to_dict()
     users = load_users()
-    success, user_info = login_user(data, users)
+    success, user_info = login_user(data, users)  # Call the login_user function
     if success:
+        session['user_email'] = data.get('email')  # Store user email in session
         return redirect(url_for('dashboard'))
     else:
         return jsonify({"success": False, "message": "Invalid credentials"}), 401
 
+
+
 @app.route('/dashboard')
 def dashboard():
-    # Assuming the user is logged in
-    return render_template('dashboard.html')  # Render a dashboard template
+    if 'user_email' in session:
+        return render_template('dashboard.html')
+    else:
+        return redirect(url_for('index'))  # Redirect to home if not logged in
 
 def load_users():
+    if not os.path.exists('users.json'):
+        return {}  # Return an empty dict if the file doesn't exist
     with open('users.json', 'r') as file:
         return json.load(file)
 
@@ -63,5 +73,12 @@ def login_user(data, users):
         return True, {"first_name": users[email]['first_name']}
     return False, {}
 
+
+@app.route('/logout')
+def logout():
+    session.pop('user_email', None)  # Remove the user from the session
+    return redirect(url_for('index'))
+
 if __name__ == '__main__':
     app.run(debug=True)
+

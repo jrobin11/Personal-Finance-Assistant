@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // Handle registration form submission
-    const registerForm = document.getElementById('register-form');
+    const registerForm = document.getElementById('registerForm');
     if (registerForm) {
         registerForm.addEventListener('submit', function(event) {
             event.preventDefault();
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Handle login form submission
-    const loginForm = document.getElementById('login-form');
+    const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', function(event) {
             event.preventDefault();
@@ -27,27 +27,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Generic form submission handler
     function submitForm(form, url) {
         const formData = new FormData(form);
-
+    
         fetch(url, {
             method: 'POST',
             body: formData
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                console.log('Action successful:', data.message);
-                // Update UI or redirect as needed
+        .then(response => {
+            if (response.ok) {
+                if (url === '/login' && response.redirected) {
+                    window.location.href = response.url;  // Redirect to the new URL
+                } else {
+                    return response.json();
+                }
             } else {
-                console.error('Action failed:', data.message);
-                // Show error feedback on UI
+                throw new Error('Network response was not ok.');
+            }
+        })
+        .then(data => {
+            if (data && !data.success) {
+                // Handle failure
+                alert(data.message);
             }
         })
         .catch(error => {
             console.error('Fetch error:', error);
         });
     }
+    
 
 });
