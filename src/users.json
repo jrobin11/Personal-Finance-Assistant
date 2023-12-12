@@ -52,19 +52,19 @@
                 "date": "2023-11-20",
                 "description": "paid the water bill",
                 "amount": 100.0,
-                "category": "Food"
+                "category": "Bills"
             },
             {
                 "date": "2023-10-11",
                 "description": "paid the water-bill",
                 "amount": 120.0,
-                "category": "Food"
+                "category": "Bills"
             },
             {
                 "date": "2023-09-12",
                 "description": "paid the water-bill",
                 "amount": 130.0,
-                "category": "Food"
+                "category": "Bills"
             },
             {
                 "date": "2023-11-23",
@@ -89,5 +89,34 @@
         "email": "bat1@gmail.com",
         "password": "robin",
         "expenses": []
+    },
+    "rmat@psu.edu": {
+        "first_name": "Ryan",
+        "last_name": "Mathew",
+        "phone": "1234567890",
+        "email": "rmat@psu.edu",
+        "password": "rmat",
+        "expenses": []
+    },
+    "robin@psu.edu": {
+        "first_name": "Robin",
+        "last_name": "Batman",
+        "phone": "1234567890",
+        "email": "robin@psu.edu",
+        "password": "robin",
+        "expenses": [
+            {
+                "date": "2023-12-11",
+                "description": "Got gas",
+                "amount": 60.0,
+                "category": "Fuel"
+            },
+            {
+                "date": "2023-12-10",
+                "description": "Bought coffee",
+                "amount": 5.0,
+                "category": "Other"
+            }
+        ]
     }
 }
