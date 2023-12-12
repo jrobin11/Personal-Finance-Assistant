@@ -1,78 +1,384 @@
 # Constants for categorization
+
 FOOD_KEYWORDS = [
     "restaurant", "cafe", "supermarket", "grocery", "pizza", "diner", "fast food", "sushi", "steakhouse",
     "bakery", "bistro", "buffet", "deli", "delivery", "takeout", "coffee shop", "ice cream", "dessert",
     "food truck", "market", "butcher", "seafood", "pasta", "grill", "barbecue", "brewery", "pub", "doughnut",
-    "bagel", "brunch", "dining", "water"
+    "bagel", "brunch", "dining", "water", "coffee", "sandwich", "burger", "salad", "organic", "vegan",
+    "vegetarian", "breakfast", "lunch", "dinner", "snack", "pastry", "chocolate", "tea", "juice",
+    "smoothie", "wine", "beer", "spirits", "cocktail", "tapas", "appetizer", "entrée", "main course",
+    "desserts", "cheese", "charcuterie", "sweets", "catering", "meal prep", "protein", "fruits", "vegetables",
+    "noodles", "rice", "tacos", "burrito", "wrap", "fries", "chicken", "beef", "pork", "fish", "shellfish",
+    "sauce", "spices", "herbs", "bread", "eggs", "milk", "cheese", "yogurt", "butter", "condiments",
+    "jam", "honey", "syrup", "oil", "vinegar", "beans", "lentils", "tofu", "tempeh", "nuts", "seeds",
+    "soup", "stew", "curry", "BBQ", "grilled", "roasted", "baked", "fried", "stir-fry", "food court",
+    "gourmet", "fine dining", "ethnic food", "international cuisine", "street food", "local food",
+    "farmers market", "food festival", "cooking", "baking", "recipe", "culinary"
 ]
+
 
 FUEL_KEYWORDS = [
     "gas", "fuel", "petrol", "service station", "gasoline", "diesel", "fill-up", "gas pump", "octane",
-    "service garage", "car wash", "oil change", "auto service"
+    "service garage", "car wash", "oil change", "auto service", "fuel station", "petrol pump", "tank",
+    "gasoline stand", "motor oil", "lubricant", "premium gas", "regular gas", "midgrade gas", "ethanol",
+    "biofuel", "propane", "LPG", "natural gas", "CNG", "refueling", "fuel additive", "fuel treatment",
+    "fuel system cleaner", "car maintenance", "vehicle service", "auto repair", "automotive care",
+    "tire rotation", "brake service", "exhaust service", "transmission service", "radiator service",
+    "air filter", "engine tune-up", "battery check", "battery replacement", "coolant flush", "alignment",
+    "suspension", "shock absorbers", "wheel balancing", "tire change", "tire repair", "auto inspection",
+    "emissions testing", "auto diagnostics", "vehicle check-up", "automotive fluids", "brake fluid",
+    "transmission fluid", "power steering fluid", "windshield wiper fluid", "antifreeze", "coolant",
+    "spark plug", "engine belts", "timing belt", "serpentine belt", "fan belt", "engine repair",
+    "auto detailing", "car care products", "car accessories", "fuel efficiency", "mileage check",
+    "vehicle registration", "roadside assistance", "tow service", "emergency fuel"
 ]
+
 
 BILLS_KEYWORDS = [
     "bill", "utility", "electricity", "water-bill", "internet", "phone", "rent", "mortgage", "insurance",
     "cable", "streaming", "subscription", "loan", "credit card", "bank fee", "tuition", "health insurance",
-    "car insurance", "home insurance", "life insurance", "property tax"
+    "car insurance", "home insurance", "life insurance", "property tax", "gas bill", "heating", "cooling",
+    "air conditioning", "sewer", "trash collection", "garbage disposal", "recycling fee", "landline",
+    "mobile plan", "data plan", "wifi", "broadband", "lease", "home equity", "auto loan", "student loan",
+    "personal loan", "overdraft", "ATM fee", "savings account", "checking account", "investment account",
+    "retirement fund", "401k", "IRA", "Roth IRA", "pension plan", "education fund", "health savings",
+    "flexible spending", "prescription", "medication", "dental care", "vision care", "doctor visit",
+    "medical procedure", "clinic visit", "hospital bill", "lab test", "x-ray", "ultrasound", "therapy",
+    "counseling", "legal fees", "attorney fees", "court costs", "fines", "penalties", "taxes", "income tax",
+    "sales tax", "excise tax", "vehicle registration", "license renewal", "parking permit", "toll charges",
+    "public transportation", "bus pass", "metro card", "train ticket", "gym membership", "fitness class",
+    "yoga class", "sports club", "country club", "streaming music", "streaming video", "e-book subscription",
+    "magazine subscription", "newspaper subscription", "online service", "cloud storage", "web hosting",
+    "domain registration", "software license", "app subscription", "TV license", "satellite TV",
+    "pay-per-view", "video on demand", "charity donation", "membership fee", "association dues",
+    "alimony", "child support", "pet care plan", "veterinary bill", "garden service", "pool maintenance",
+    "home security", "alarm service", "pest control", "cleaning service", "laundry service", "delivery service"
 ]
+
 
 TRAVEL_KEYWORDS = [
     "airline", "travel", "uber", "taxi", "bus", "train", "hotel", "flight", "airport", "car rental",
     "accommodation", "tourism", "tourist", "ticket", "fare", "cruise", "resort", "hostel", "motel",
-    "B&B", "bed and breakfast", "railway", "subway", "metro", "ferry", "cab", "lyft", "shuttle"
+    "B&B", "bed and breakfast", "railway", "subway", "metro", "ferry", "cab", "lyft", "shuttle",
+    "vacation", "trip", "journey", "tour", "excursion", "expedition", "backpacking", "camping",
+    "sightseeing", "guide", "guided tour", "city pass", "travel insurance", "luggage", "baggage",
+    "passport services", "visa fees", "airport transfer", "airport shuttle", "airfare", "flight ticket",
+    "international flight", "domestic flight", "economy class", "business class", "first class",
+    "air miles", "frequent flyer", "travel agent", "travel agency", "road trip", "car hire", "driver service",
+    "chauffeur", "limousine service", "rental car", "GPS rental", "travel gear", "adventure travel",
+    "holiday package", "all-inclusive resort", "timeshare", "destination", "itinerary", "travel planner",
+    "city tour", "country tour", "cruise ship", "sailing", "yacht rental", "boat hire", "scenic train",
+    "coach travel", "intercity bus", "public transport pass", "travel card", "bike rental", "scooter rental",
+    "motorbike hire", "RV rental", "campervan hire", "travel guidebook", "map", "souvenir", "travel app",
+    "trip planner", "currency exchange", "travel adapter", "travel pillow", "travel accessories", "duty-free",
+    "airport lounge", "boarding pass", "check-in", "customs", "immigration", "transit", "layover",
+    "stopover", "accommodation booking", "airbnb", "couchsurfing", "hostelworld", "booking.com", "trivago",
+    "expedia", "travelocity", "skyscanner", "tripadvisor", "roadside assistance", "travel blog", "travel vlog",
+    "travel influencer", "travel photography", "ecotourism", "sustainable travel", "volunteer travel",
+    "study abroad", "work abroad", "travel visa", "consulate services", "embassy services"
 ]
+
 
 ENTERTAINMENT_KEYWORDS = [
     "cinema", "movie", "theater", "concert", "music", "gig", "festival", "club", "bar", "nightlife",
     "entertainment", "museum", "exhibition", "sightseeing", "park", "zoo", "amusement park", "arcade",
-    "game", "sports event", "match", "golf", "bowling", "pool", "billiards", "hobby", "crafts"
+    "game", "sports event", "match", "golf", "bowling", "pool", "billiards", "hobby", "crafts",
+    "video games", "board games", "card games", "streaming service", "Netflix", "Disney+", "Hulu",
+    "Amazon Prime", "Spotify", "live music", "opera", "ballet", "dance", "art gallery", "circus",
+    "karaoke", "escape room", "virtual reality", "VR", "lan party", "comic con", "fan convention",
+    "book reading", "author event", "poetry", "literature", "stand-up comedy", "improv", "magic show",
+    "puzzle", "trivia night", "wine tasting", "beer tasting", "distillery tour", "casino", "gambling",
+    "lottery", "betting", "race track", "horse racing", "theme park", "water park", "beach",
+    "picnic", "campfire", "outdoor adventure", "hiking", "nature reserve", "national park", "skiing",
+    "snowboarding", "ice skating", "rock climbing", "surfing", "scuba diving", "snorkeling", "fishing",
+    "boat trip", "cruise", "yacht party", "social club", "meetup", "group activity", "community event",
+    "local event", "city tour", "historical site", "monument", "cultural event", "food festival",
+    "music festival", "film festival", "dance festival", "craft fair", "flea market", "farmers market",
+    "antique shop", "collectibles", "hobby supplies", "model building", "DIY project", "painting class",
+    "art workshop", "music lesson", "instrument rental", "recording studio", "photography", "camera equipment",
+    "photo shoot", "vlog", "YouTube channel", "streaming content", "podcast", "audiobook", "eBook",
+    "comic book", "manga", "anime", "graphic novel", "role-playing games", "RPG", "LARP", "cosplay",
+    "fan fiction", "nerd culture", "geek culture", "pop culture", "celebrity gossip", "fan club",
+    "music album", "concert tour", "ticket sales", "event pass", "VIP experience", "backstage pass",
+    "sports game", "football", "basketball", "baseball", "soccer", "hockey", "tennis", "golf course",
+    "bowling alley", "pool hall", "darts", "air hockey", "pinball", "foosball", "table tennis",
+    "skate park", "BMX", "motorsport", "racing", "drone racing", "e-sports", "gaming tournament",
+    "video game console", "gaming PC", "mobile games", "game development", "game design",
+    "cosmetic items", "game skins", "in-game purchases", "microtransactions", "loot boxes",
+    "game subscription", "gaming service", "game streaming", "cloud gaming", "gaming community",
+    "fan merchandise", "collectible items", "action figures", "figurines", "model kits", "board game",
+    "puzzle game", "strategy game", "adventure game", "role-playing game", "shooter game", "sports game",
+    "racing game", "simulation game", "puzzle-solving", "mystery game", "horror game", "fantasy game",
+    "sci-fi game", "retro gaming", "classic games", "arcade cabinet", "pinball machine",
+    "multiplayer game", "online gaming", "LAN party", "gaming headset", "gaming mouse", "gaming keyboard",
+    "gaming controller", "VR headset", "AR games", "augmented reality", "virtual world", "simulated reality",
+    "gaming platform", "game modding", "game hacks", "cheat codes", "game guides", "walkthroughs",
+    "gameplay videos", "let's play", "speedrun", "game streaming", "Twitch", "Mixer", "YouTube Gaming",
+    "game reviews", "game analysis", "game theory", "game mechanics", "game narrative", "storytelling",
+    "game art", "game soundtracks", "game music", "game voice acting", "game localization", "game translation",
+    "game testing", "beta testing", "early access", "crowdfunding", "Kickstarter", "Indiegogo",
+    "game development tools", "game engines", "Unity", "Unreal Engine", "GameMaker", "RPG Maker",
+    "mod tools", "level editor", "asset creation", "3D modeling", "texture mapping", "animation",
+    "game physics", "AI programming", "scripting", "coding", "game design principles", "game production",
+    "indie games", "independent developers", "game studios", "game publishers", "game marketing",
+    "game sales", "digital distribution", "Steam", "Epic Games Store", "Origin", "Uplay", "GOG",
+    "game bundles", "Humble Bundle", "game discounts", "game sales", "flash sales", "seasonal sales",
+    "game merchandise", "game apparel", "game accessories", "game collectibles", "game memorabilia",
+    "game conventions", "game expos", "game conferences", "game festivals", "game competitions",
+    "game awards", "game community", "game forums", "game discussions", "game fan art", "game fan fiction",
+    "game cosplay", "game tutorials", "game workshops", "game seminars", "game education", "game scholarships",
+    "game careers", "game industry", "game development community", "game networking", "game events",
+    "game meetups", "game jams", "game hackathons", "game showcases", "game exhibitions", "game demos",
+    "game prototypes", "game pitches", "game funding", "game investors", "game incubators"
+
 ]
 
 SHOPPING_KEYWORDS = [
     "shopping", "clothing", "apparel", "electronics", "gadget", "bookstore", "furniture", "jewelry",
     "shoes", "mall", "outlet", "sale", "discount", "boutique", "marketplace", "online shopping",
-    "department store", "retail", "purchase"
+    "department store", "retail", "purchase", "fashion", "accessories", "designer wear", "luxury brand",
+    "consignment", "thrift store", "secondhand", "vintage", "antiques", "collectibles", "handmade",
+    "art and crafts", "hobbies", "sporting goods", "outdoor gear", "camping equipment", "fishing gear",
+    "hunting supplies", "biking", "cycling", "skiing", "snowboarding", "surfing", "swimming gear",
+    "gym equipment", "workout clothes", "yoga mat", "athleisure", "footwear", "boots", "sandals",
+    "sneakers", "heels", "flats", "watches", "sunglasses", "bags", "purses", "wallets", "belts",
+    "ties", "scarves", "hats", "gloves", "cosmetics", "makeup", "beauty products", "skincare",
+    "haircare", "perfume", "cologne", "bath and body", "nail polish", "hair tools", "personal care",
+    "baby products", "children's clothes", "toys", "games", "puzzles", "board games", "video games",
+    "computers", "laptops", "tablets", "smartphones", "cameras", "audio equipment", "headphones",
+    "speakers", "TVs", "home theater", "appliances", "kitchen gadgets", "cookware", "bakeware",
+    "utensils", "dinnerware", "glassware", "furniture", "home decor", "bedding", "bath linens",
+    "rugs", "curtains", "lighting", "office supplies", "stationery", "books", "magazines", "e-books",
+    "music", "CDs", "vinyl records", "musical instruments", "groceries", "food items", "beverages",
+    "alcohol", "wine", "beer", "spirits", "pet supplies", "gardening tools", "plants", "flowers",
+    "hardware", "tools", "DIY materials", "home improvement", "car parts", "automotive accessories",
+    "bicycle parts", "motorcycle gear", "travel accessories", "luggage", "backpacks", "suitcases",
+    "jewelry making", "textiles", "fab"
 ]
 
 HEALTH_KEYWORDS = [
     "doctor", "dentist", "pharmacy", "medicine", "healthcare", "clinic", "hospital", "surgery",
     "treatment", "therapy", "prescription", "optometrist", "glasses", "contacts", "vitamins",
-    "supplements", "gym", "fitness", "yoga", "workout", "personal trainer"
-]
+    "supplements", "gym", "fitness", "yoga", "workout", "personal trainer", "physiotherapy",
+    "chiropractor", "acupuncture", "massage therapy", "rehabilitation", "nutritionist", "dietician",
+    "weight loss", "mental health", "psychologist", "psychiatrist", "counseling", "support group",
+    "health check", "medical exam", "blood test", "x-ray", "MRI", "ultrasound", "vaccination",
+    "immunization", "allergy testing", "dermatologist", "skin care", "pediatrician", "obstetrician",
+    "gynecologist", "orthopedist", "cardiologist", "neurologist", "oncologist", "endocrinologist",
+    "audiologist", "speech therapy", "occupational therapy", "eye care", "dental care", "orthodontics",
+    "root canal", "filling", "crown", "implant", "dental cleaning", "braces", "invisalign",
+    "hearing aids", "prosthetics", "mobility aids", "wheelchair", "walker", "crutches", "first aid",
+    "emergency room", "urgent care", "laboratory services", "radiology", "chemotherapy", "dialysis",
+    "organ transplant", "surgical procedure", "anesthesia", "plastic surgery", "cosmetic surgery",
+    "laser eye surgery", "LASIK", "birth control", "fertility treatment", "prenatal care", "maternity",
+    "newborn care", "veterinary", "pet health", "animal clinic", "vaccines for pets", "spaying",
+    "neutering", "veterinary surgery", "pet medication", "animal therapy", "pet insurance",
+    "health insurance", "medical bill", "hospitalization", "intensive care", "nursing home",
+    "home health care", "palliative care", "hospice", "meditation", "mindfulness", "wellness retreat",
+    "spa treatment", "detox", "cleanse", "holistic health", "alternative medicine", "naturopathy",
+    "herbal remedies", "aromatherapy", "essential oils", "homeopathy", "acupressure", "reflexology",
+    "reiki", "energy healing", "chakra balancing", "ayurveda", "traditional Chinese medicine",
+    "TCM", "cupping therapy", "moxibustion", "qi gong", "tai chi", "yin yoga", "restorative yoga",
+    "hot yoga", "pilates", "barre", "HIIT", "high-intensity interval training", "crossfit", "bootcamp",
+    "aerobics", "Zumba", "dance fitness", "kickboxing", "martial arts", "taekwondo", "karate",
+    "judo", "jiu-jitsu", "boxing", "muay thai", "krav maga", "self-defense", "strength training",
+    "weightlifting", "bodybuilding", "muscle gain", "fat loss", "cardio", "treadmill", "elliptical",
+    "rowing machine", "exercise bike", "spin class", "cycling", "indoor cycling", "mountain biking",
+    "road biking", "BMX", "skating", "rollerblading", "ice skating", "skiing", "snowboarding",
+    "water sports", "surfing", "windsurfing", "kitesurfing", "wakeboarding", "paddleboarding",
+    "kayaking", "canoeing", "rafting", "diving", "scuba diving", "snorkeling", "swimming",
+    "water aerobics", "aquatic therapy", "sailing", "yachting", "fishing", "angling", "fly fishing",
+    "deep sea fishing", "hunting", "archery", "shooting", "gun range", "climbing", "rock climbing",
+    "bouldering", "mountaineering", "hiking", "trekking", "backpacking", "camping", "outdoor adventure",
+    "nature"
+    ]
 
 EDUCATION_KEYWORDS = [
     "education", "school", "college", "university", "tuition", "textbooks", "courses", "seminar",
-    "workshop", "training", "educational supplies", "student fee", "campus"
+    "workshop", "training", "educational supplies", "student fee", "campus", "online course",
+    "e-learning", "webinar", "distance learning", "adult education", "continuing education",
+    "professional development", "skill development", "academic research", "scholarship",
+    "grant", "financial aid", "study abroad", "internship", "apprenticeship", "tutorial",
+    "lecture", "classroom", "syllabus", "curriculum", "extracurricular", "academic advisor",
+    "counseling services", "career services", "library", "lab fees", "science lab", "art supplies",
+    "music class", "language class", "ESL", "foreign language", "exchange program", "student exchange",
+    "dormitory", "student housing", "residence hall", "meal plan", "student club", "student organization",
+    "fraternity", "sorority", "campus event", "student union", "alumni", "graduation", "commencement",
+    "certificate program", "diploma", "degree", "bachelor's degree", "master's degree", "Ph.D.",
+    "doctorate", "thesis", "dissertation", "research project", "field study", "independent study",
+    "study group", "tutoring", "mentorship", "peer mentoring", "academic journal", "publication",
+    "conference", "symposium", "academic conference", "research presentation", "poster session",
+    "workshop", "seminar", "lecture series", "guest speaker", "visiting professor", "faculty",
+    "professor", "lecturer", "instructor", "teaching assistant", "research assistant", "lab assistant",
+    "academic department", "school of", "college of", "institute of", "center for", "research institute",
+    "research center", "academic program", "major", "minor", "concentration", "specialization",
+    "field of study", "course of study", "study track", "academic track", "educational track",
+    "degree program", "graduate program", "undergraduate program", "postgraduate program", "doctoral program",
+    "Ph.D. program", "master's program", "bachelor's program", "associate's program", "certificate program",
+    "diploma program", "vocational program", "technical program", "trade school", "community college",
+    "junior college", "four-year college", "university", "liberal arts college", "research university",
+    "state university", "private university", "public university", "ivy league", "prestigious university",
+    "accredited institution", "higher education", "post-secondary education", "tertiary education",
+    "adult education", "continuing education", "lifelong learning", "professional development",
+    "career advancement", "skill building", "competency development", "workforce training",
+    "job training", "career training", "technical training", "vocational training", "trade training",
+    "apprenticeship", "internship", "co-op program", "cooperative education", "work-study program",
+    "on-the-job training", "practical experience", "hands-on experience", "real-world experience",
+    "field experience", "clinical experience", "internship opportunity", "apprenticeship opportunity",
+    "work placement", "job placement", "employment opportunity"
 ]
 
 HOME_KEYWORDS = [
     "home improvement", "furnishing", "decor", "appliance", "hardware", "garden", "landscaping",
-    "maintenance", "repair", "cleaning", "utilities", "renovation", "DIY", "tools"
+    "maintenance", "repair", "cleaning", "utilities", "renovation", "DIY", "tools", "painting",
+    "plumbing", "electrical", "carpentry", "heating", "cooling", "air conditioning", "HVAC",
+    "roofing", "flooring", "tiling", "carpeting", "windows", "doors", "fencing", "decking",
+    "patio", "driveway", "garage", "shelving", "storage", "organization", "furniture assembly",
+    "lighting", "interior design", "home decor", "wall decor", "curtains", "blinds", "shutters",
+    "bedding", "mattress", "pillows", "throws", "towels", "tableware", "cookware", "kitchen gadgets",
+    "kitchen remodel", "bathroom remodel", "basement finishing", "attic conversion", "home extension",
+    "energy efficiency", "solar panels", "insulation", "weatherproofing", "smart home", "home automation",
+    "security system", "fire alarm", "carbon monoxide detector", "smoke detector", "home safety",
+    "pest control", "termite treatment", "mold remediation", "asbestos removal", "lead paint removal",
+    "water damage restoration", "fire damage repair", "home cleaning", "carpet cleaning", "window cleaning",
+    "gutter cleaning", "pressure washing", "housekeeping", "maid service", "laundry service",
+    "dry cleaning", "waste disposal", "recycling", "composting", "garden design", "landscape architecture",
+    "planting", "horticulture", "gardening tools", "lawn care", "lawn mowing", "tree trimming",
+    "tree removal", "stump grinding", "irrigation system", "sprinkler system", "fertilization",
+    "weed control", "pest management", "outdoor lighting", "pool maintenance", "hot tub maintenance",
+    "sauna installation", "backyard design", "outdoor furniture", "grilling equipment", "barbecue",
+    "fire pit", "outdoor kitchen", "playground equipment", "swing set", "trampoline", "fence installation",
+    "deck construction", "patio pavers", "outdoor tiles", "retaining wall", "water feature",
+    "pond installation", "fountain", "waterfall", "garden sculpture", "outdoor art", "landscape lighting",
+    "pathway lighting", "garden path", "walkway", "driveway paving", "asphalt paving", "concrete work",
+    "masonry", "brickwork", "stone work", "tile work", "ceramic tile", "porcelain tile", "marble tile",
+    "granite tile", "slate tile", "travertine tile", "glass tile", "mosaic tile", "subway tile",
+    "backsplash tile", "wall tile", "floor tile", "shower tile", "bathroom tile", "kitchen tile",
+    "tile grout", "tile adhesive", "tile cutter", "tile saw", "tile installation", "tile repair",
+    "grout cleaning", "grout sealing", "grout repair", "carpet installation"
 ]
 
 TRANSPORTATION_KEYWORDS = [
     "transportation", "commute", "parking", "tolls", "public transit", "bike", "scooter", "vehicle",
-    "maintenance", "repairs", "tires", "inspection", "registration", "license"
+    "maintenance", "repairs", "tires", "inspection", "registration", "license", "bus fare", "train ticket",
+    "subway pass", "metro card", "taxi fare", "ride-share", "uber", "lyft", "carpool", "vanpool",
+    "bicycle repair", "bike rack", "scooter rental", "motorcycle", "motorbike", "auto insurance",
+    "car wash", "fuel costs", "gasoline", "diesel", "electric vehicle", "EV charging", "hybrid car",
+    "car battery", "oil change", "brake service", "exhaust system", "transmission", "alignment",
+    "tire rotation", "air conditioning service", "car detailing", "window tinting", "car accessories",
+    "auto parts", "spare parts", "windshield wipers", "headlights", "taillights", "car alarm",
+    "GPS system", "navigation system", "parking permit", "parking meter", "parking garage", "tow service",
+    "roadside assistance", "emergency services", "traffic fines", "speeding ticket", "parking ticket",
+    "vehicle registration", "driver's license renewal", "emissions testing", "safety inspection",
+    "car rental", "truck rental", "moving van", "trailer rental", "RV rental", "campervan hire",
+    "boat transport", "ferry ticket", "cruise", "port fees", "marina costs", "shipping costs",
+    "freight charges", "cargo transport", "logistics services", "delivery services", "courier services",
+    "postal services", "mail delivery", "package delivery", "express shipping", "international shipping",
+    "customs fees", "import duties", "export charges", "air freight", "sea freight", "rail freight",
+    "truck freight", "transportation brokerage", "freight forwarding", "shipping agent", "logistics provider",
+    "supply chain management"
 ]
 
 CHILD_CARE_KEYWORDS = [
     "child care", "daycare", "babysitter", "nanny", "preschool", "toys", "children's clothing",
-    "baby supplies", "diapers", "formula", "pediatrician", "kids activities"
+    "baby supplies", "diapers", "formula", "pediatrician", "kids activities", "playgroup", "kindergarten",
+    "toddler classes", "child development", "early learning", "educational toys", "playground",
+    "children's books", "storytime", "nursery", "crèche", "childminder", "au pair", "child safety",
+    "car seat", "stroller", "crib", "baby monitor", "nursing", "breastfeeding supplies", "bottle feeding",
+    "high chair", "baby food", "teething", "potty training", "childproofing", "baby gate", "playpen",
+    "pacifier", "children's healthcare", "vaccinations", "immunizations", "child wellness", "pediatric care",
+    "childhood illness", "pediatric dentist", "orthodontist", "speech therapy", "occupational therapy",
+    "child psychologist", "children's therapy", "special needs care", "learning disabilities", "autism support",
+    "after school care", "school supplies", "backpacks", "lunchboxes", "school uniforms", "sports gear",
+    "music lessons", "art classes", "dance classes", "martial arts", "swimming lessons", "soccer league",
+    "baseball team", "basketball camp", "summer camp", "scouts", "guides", "youth clubs", "children's workshops",
+    "field trips", "educational trips", "family outings", "theme parks", "children's museums", "zoo visits",
+    "aquarium visits", "play centers", "indoor playgrounds", "birthday parties", "party supplies",
+    "children's entertainment", "children's events", "holiday camps", "vacation care", "childcare subsidy",
+    "government assistance for childcare", "parenting classes", "parent support groups", "mother's group",
+    "father's group", "family counseling", "adoption services", "foster care", "child custody", "child support",
+    "family law", "maternity leave", "paternity leave", "parental leave", "family planning", "child care consulting",
+    "child care training"
 ]
 
 PET_CARE_KEYWORDS = [
     "pet", "vet", "veterinarian", "pet food", "grooming", "boarding", "adoption", "toys",
-    "pet supplies", "animal care", "dog walking", "aquarium"
+    "pet supplies", "animal care", "dog walking", "aquarium", "dog", "cat", "bird",
+    "fish", "reptile", "small animal", "hamster", "rabbit", "guinea pig", "ferret",
+    "turtle", "lizard", "snake", "kitten", "puppy", "animal rescue", "spaying",
+    "neutering", "microchipping", "vaccination", "flea treatment", "tick treatment",
+    "heartworm prevention", "deworming", "pet insurance", "animal hospital",
+    "pet clinic", "emergency vet", "pet health", "animal wellness", "pet surgery",
+    "animal surgery", "pet medication", "pet pharmacy", "pet diet", "pet nutrition",
+    "raw food diet", "dog food", "cat food", "pet treats", "pet grooming salon",
+    "pet spa", "pet bath", "nail trimming", "ear cleaning", "pet haircuts",
+    "pet styling", "dog park", "pet-friendly", "pet sitter", "pet trainer",
+    "dog training", "obedience training", "puppy school", "pet behavior",
+    "animal shelter", "foster care", "pet adoption event", "lost and found pets",
+    "pet ID tags", "pet leash", "pet collar", "pet harness", "pet carrier",
+    "pet bed", "pet house", "pet furniture", "cat tree", "scratching post"
 ]
 
 PERSONAL_CARE_KEYWORDS = [
     "salon", "spa", "haircut", "beauty", "skincare", "cosmetics", "massage", "barber", "manicure",
-    "pedicure", "aesthetics", "wellness", "gym membership", "therapy session"
+    "pedicure", "aesthetics", "wellness", "gym membership", "therapy session", "facial", "makeup",
+    "waxing", "hair coloring", "blowout", "hairstyling", "hair treatment", "beard trim", "shave",
+    "eyebrow threading", "eyebrow waxing", "eyelash extensions", "tanning salon", "body scrub",
+    "mud wrap", "hydrotherapy", "aromatherapy", "hot stone massage", "deep tissue massage",
+    "Swedish massage", "reflexology", "acupuncture", "chiropractic", "physiotherapy", "yoga class",
+    "pilates class", "fitness class", "personal trainer", "nutrition counseling", "weight loss program",
+    "detox program", "meditation class", "mindfulness training", "reiki session", "holistic therapy",
+    "life coaching", "mental health counseling", "psychologist visit", "psychiatrist visit",
+    "dermatologist appointment", "plastic surgery", "cosmetic surgery", "laser hair removal",
+    "Botox injections", "fillers", "skin peeling", "microdermabrasion", "body contouring",
+    "tattoo", "body piercing", "nail salon", "nail art", "gel nails", "acrylic nails",
+    "spa day", "spa package", "health retreat", "beauty products", "hair products", "bath products",
+    "body care", "fragrance", "perfume", "cologne", "essential oils", "bath bomb", "shower gel",
+    "body lotion", "hand cream", "foot cream", "anti-aging products", "sunscreen", "self-tanner",
+    "deodorant", "shampoo", "conditioner", "hair mask", "hair oil", "hair serum", "styling gel",
+    "hairspray", "mousse", "hair dye", "hair bleach", "hair straightener", "curling iron", "hair dryer",
+    "makeup remover", "cleanser", "toner", "moisturizer", "serum", "face mask", "exfoliator",
+    "foundation", "concealer", "powder", "blush", "bronzer", "highlighter", "eyeshadow",
+    "eyeliner", "mascara", "lipstick", "lip gloss", "lip balm", "makeup brushes", "makeup sponge",
+    "beauty blender", "makeup bag", "cosmetic case", "vanity mirror", "tweezers", "nail clippers",
+    "nail file", "cuticle pusher", "nail polish", "nail polish remover", "false nails", "nail glue",
+    "nail decals", "nail stickers", "eyelash curler", "false eyelashes", "eyelash"
 ]
 
 SAVINGS_INVESTMENT_KEYWORDS = [
     "savings", "investment", "stock market", "bonds", "retirement", "IRA", "401(k)", "CD", "mutual fund",
-    "savings account", "deposit", "financial advisor", "wealth management"
+    "savings account", "deposit", "financial advisor", "wealth management", "pension plan", "portfolio",
+    "dividends", "stocks", "shares", "equities", "security trading", "brokerage account", "trading account",
+    "investment strategy", "asset allocation", "risk management", "capital gains", "index fund", 
+    "exchange-traded fund", "ETF", "hedge fund", "real estate investment", "REIT", "property investment",
+    "land acquisition", "commodities", "gold", "silver", "precious metals", "cryptocurrency", "Bitcoin",
+    "Ethereum", "crypto wallet", "forex", "foreign exchange", "currency trading", "treasury bills",
+    "government securities", "savings bonds", "fixed deposit", "certificate of deposit", "tax-free savings",
+    "education savings", "529 plan", "college fund", "robo-advisor", "financial planning", "retirement planning",
+    "pension contributions", "annuities", "insurance policies", "life insurance", "estate planning",
+    "trust fund", "inheritance", "wealth preservation", "financial consulting", "investment banking",
+    "venture capital", "angel investing", "start-up funding", "crowdfunding", "peer-to-peer lending",
+    "microfinance", "impact investing", "sustainable investing", "ESG investing", "ethical investing",
+    "green bonds", "carbon credits", "climate finance", "socially responsible investing", "charitable donation",
+    "philanthropy", "endowment", "grantmaking", "scholarship fund", "donor-advised fund", "giving circle",
+    "nonprofit funding", "community investment", "social enterprise", "microcredit", "social impact bond",
+    "community development financial institution", "CDFI", "development bank", "international aid"
 ]
 
+# Map categories to keywords
+CATEGORY_KEYWORDS = {
+    "Food": FOOD_KEYWORDS,
+    "Fuel": FUEL_KEYWORDS,
+    "Bills": BILLS_KEYWORDS,
+    "Travel": TRAVEL_KEYWORDS,
+    "Entertainment": ENTERTAINMENT_KEYWORDS,
+    "Shopping": SHOPPING_KEYWORDS,
+    "Health": HEALTH_KEYWORDS,
+    "Education": EDUCATION_KEYWORDS,
+    "Home": HOME_KEYWORDS,
+    "Transportation": TRANSPORTATION_KEYWORDS,
+    "Child Care": CHILD_CARE_KEYWORDS,
+    "Pet Care": PET_CARE_KEYWORDS,
+    "Personal Care": PERSONAL_CARE_KEYWORDS,
+    "Savings/Investment": SAVINGS_INVESTMENT_KEYWORDS,
+}
