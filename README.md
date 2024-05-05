@@ -1,4 +1,4 @@
-# Personal Finance Assistant
+# Personal Finance Assistant - on going project
 
 ## Project Overview
 The Personal Finance Assistant is a Python application designed to help users manage their personal finances more effectively. It allows users to track their expenses by categorizing them into various categories like Food, Fuel, Bills, and Travel. The application also features user account management, enabling personalized expense tracking.
